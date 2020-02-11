@@ -5,7 +5,7 @@ export default class Gladiator {
         if (weapon === 'Spear' || weapon === 'Club' || weapon === 'Trident') {
             this.weapon = weapon;
         } else {
-            throw new error ('the two of uou are eliminated');
+            throw new error ('Error');
         }
     }
 
