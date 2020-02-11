@@ -1,47 +1,35 @@
 export default class Arena {
     constructor(name) {
-        this.name = name;
+        // this.name = name.replace(name.charAt(0), name.charAt(0).toUpperCase());
+        this.name = name.charAt(0).toUpperCase() + name.slice(1);
         //An arena can have gladiators
         this.gladiators = [];
     }
 
-    //The name should be capitalized
-    capitalize() {
-        return `${this.name.charAt(0).toUpperCase()}`;
-    }
 
     //You can add a gladiator to the arena
-    addGladiator(wari) {
-        //The arena should never have more than 2 gladiators in it at a time
-        if (this.gladiators.length < 2) {
-            this.gladiators.push(wari);
-        } else {
-            console.log('full');
+    addGladiator(gladiator){
+        if(this.gladiators.length ==2){
+            return console.log('Max Number of Gladiators in Arena ')
         }
+        else this.gladiators.push(gladiator)
     }
 
     //If there are two gladiators in the arena, you can call a fight method that results in the
     //elimination of one of the gladiators from the arena.
-    fight() {
-        if (this.gladiators[0].weapon == this.gladiators[1].weapon) {
-            this.gladiators = [];
-        } else if (this.gladiators[0].weapon == 'Trident' && this.gladiators[1].weapon == 'Spear') {
-            this.gladiators.pop();
-        } else if (this.gladiators[0].weapon == 'Spear' && this.gladiators[1].weapon == 'Trident') {
-            this.gladiators.shift();
-        } else if (this.gladiators[0].weapon == 'Spear' && this.gladiators[1].weapon == 'Club') {
-            this.gladiators.pop();
-        } else if (this.gladiators[0].weapon == 'Club' && this.gladiators[1].weapon == 'Spear') {
-            this.gladiators.shift();
-        } else if (this.gladiators[0].weapon == 'Club' && this.gladiators[1].weapon == 'Trident') {
-            this.gladiators.pop();
-        } else if (this.gladiators[0].weapon == 'Trident' && this.gladiators[1].weapon == 'Club') {
-            this.gladiators.shift();
+    fight(){
+        if(this.gladiators.length == 2){
+            let fighter1 = this.gladiators[0].weapon
+            let fighter2 = this.gladiators[1].weapon
+            if(fighter1 == fighter2) return console.log("Both eliminated")
+            else {
+                if(fighter1 == 'Spear' && fighter2 == "Club") return console.log(this.gladiators[0].name + "is Victroious")
+                else if(fighter1 == 'Club' && fighter2 == "Trident") return console.log(this.gladiators[0].name + "is Victroious")
+                else if(fighter1 == 'Trident' && fighter2 == "Spear") return console.log(this.gladiators[0].name + "is Victroious")
+                else return console.log(this.gladiators[1].name + "is Victroious")
+
+            }
         }
     }
-
 }
 
-// rident beats Spear
-// Spear beats Club
-// Club beats Trident
