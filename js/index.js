@@ -1,11 +1,12 @@
-import Gladiator from './gladiator.js';
-import Arena from './arena.js';
+import Gladiator from "./gladiator.js";
+import Arena from "./arena.js";
 
-const max = new Gladiator("Maximus", "Trident");
+const faisal = new Gladiator("Faisal", "Club");
 const titus = new Gladiator("Titus", "Spear");
-const colosseum = new Arena("Colosseum");
+const colosseum = new Arena("cOlOsSeUm");
+console.log(colosseum.name);
 
-colosseum.addGladiator(max);
+colosseum.addGladiator(faisal);
 colosseum.addGladiator(titus);
 colosseum.fight();
 

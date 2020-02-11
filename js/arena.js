@@ -1,6 +1,6 @@
 export default class Arena {
     constructor(name) {
-        this.name = name.charAt(0).toUpperCase() + name.slice(1);
+        this.name = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
         this.gladiators = [];
     }
 
@@ -35,11 +35,11 @@ export default class Arena {
             return 'Both players are eleminated.';
 
             // match the weapons of the gladiators and pick a winner 
-        } else if (gladiatorWeapons.includes(['Trident', 'Spear'])) {
+        } else if (['Trident', 'Spear'].every(wp => gladiatorWeapons.includes(wp))) {
             winner = this.gladiators.find(el => el.weapon === 'Trident');
             this.keepWinnerInArena(winner);
 
-        } else if (gladiatorWeapons.includes(['Club', 'Spear'])) {
+        } else if (['Club', 'Spear'].every(wp => gladiatorWeapons.includes(wp))) {
             winner = this.gladiators.find(el => el.weapon === 'Spear');
             this.keepWinnerInArena(winner);
 
