@@ -18,16 +18,19 @@ export default class Arena {
     fight() {
         if (this.gladiators.length <= 2) {
             if (this.gladiators[1].weapon === this.gladiators[0].weapon) {
-                this.gladiators.pop();
                 return 'both of you are eliminated';
             } else if (this.gladiators[0].weapon === 'Trident' && this.gladiators[1].weapon === 'Spear' ||
                 this.gladiators[0].weapon === 'Spear' && this.gladiators[1].weapon === 'Club' ||
                 this.gladiators[0].weapon === 'Club' && this.gladiators[1].weapon === 'Trident') {
-                this.gladiators.pop();
+            this.gladiators.splice(1);
+            
+                console.log(this.gladiators[0].name);
+                
+                 
             }
-        } 
+
+        }
         // else {
-        //     this.gladiators.shift();
 
         // }
     }
