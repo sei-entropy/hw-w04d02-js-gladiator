@@ -34,8 +34,6 @@ import Arena from './arena.js';
  // colosseum.addGladiator(max);
  // colosseum.addGladiator(titus);
  // colosseum.addGladiator(andronicus);
-
-// //The arena should never have more than 2 gladiators in it at a time
 // console.log(colosseum.gladiators.length);
 
 
@@ -43,7 +41,7 @@ import Arena from './arena.js';
 const max = new Gladiator("Maximus","Trident");
 const titus = new Gladiator("Titus","Spear");
 const colosseum = new Arena("Colosseum");
-colosseum.addGladiator(max);
-colosseum.addGladiator(titus);
-colosseum.fight();
-console.log(colosseum.gladiators); // => [max]
+ colosseum.addGladiator(max);
+ colosseum.addGladiator(titus);
+ colosseum.fight();
+ console.log(colosseum.gladiators); // => [max]
