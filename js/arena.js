@@ -28,7 +28,8 @@ fight(){
     for(let i=0 ; i<this.gladiators.length ; i++){
 
         if(this.gladiators[i].weapon === this.gladiators[i+1].weapon){
-            break;
+            this.gladiators.pop();
+            this.gladiators.pop();
         }
       
         else if  (this.gladiators[i].weapon === "Trident" ){
