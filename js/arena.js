@@ -1,6 +1,6 @@
 export default class Arena {
   constructor(name, gladiators = []) {
-    this.name = name.charAt(0).toUpperCase() + name.slice(1);
+    this.name = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
     this.gladiators = gladiators;
   }
 
@@ -11,7 +11,7 @@ export default class Arena {
   }
 
   fight() {
-    if (this.gladiators.length <= 2) {
+    if (this.gladiators.length == 2) {
       //   console.log("Fight Fight");
       //   console.log(this.gladiators[0].weapon);
 

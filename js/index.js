@@ -40,15 +40,15 @@ import Arena from "./arena.js";
 /*2nd part - If there are two gladiators in the arena, 
 you can call a fight method that results in the elimination 
 of one of the gladiators from the arena.*/
-const max = new Gladiator("Maximus", "Club");
-const titus = new Gladiator("Titus", "Spear");
-const colosseum = new Arena("Colosseum");
+// const max = new Gladiator("Maximus", "Club");
+// const titus = new Gladiator("Titus", "Spear");
+// const colosseum = new Arena("Colosseum");
 
-colosseum.addGladiator(max);
-colosseum.addGladiator(titus);
-colosseum.fight();
+// colosseum.addGladiator(max);
+// colosseum.addGladiator(titus);
+// colosseum.fight();
 
-console.log(colosseum.gladiators); // => [max]
+// console.log(colosseum.gladiators); // => [max]
 
 // Trident beats Spear
 // Spear beats Club
