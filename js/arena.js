@@ -9,7 +9,7 @@ class Arena extends Gladiator {
 
     }
     capitlized() {
-        return this.name[0].toUpperCase() + this.name.substr(1);
+        return this.name[0].toUpperCase() + this.name.substr(1).toLowerCase();;
 
     }
     addGladiator(name) {
