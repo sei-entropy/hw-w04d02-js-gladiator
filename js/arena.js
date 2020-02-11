@@ -14,23 +14,23 @@ export default class Arena {
 
 
     fight() {
+        const fight1 = this.gladiators[0].weapon;
+        const fight2 = this.gladiators[1].weapon;
+
         if (this.gladiators.length === 2) {
-            const fight1 = this.gladiators[0].weapon;
-            const fight2 = this.gladiators[1].weapon;
+            if ((fight1 === "Trident" && fight2 === "Spear") ||
+                (fight1 === "Spear" && fight2 === "Club") ||
+                (fight1 === "Club" && fight2 === "Trident")) {
+                this.gladiators.splice(1);
+                console.log(fight1 + ' win');
 
-        } else if ((fight1 === "Trident" && fight2 === "Spear") ||
-            (fight1 === "Spear" && fight2 === "Club") ||
-            (fight1 === "Club" && fight2 === "Trident")) {
-            console.log(fight1 + 'win');
-            fight2.pop();
-
-        } else if ((fight2 === "Trident" && fight1 === "Spear") ||
-            (fight2 === "Spear" && fight1 === "Club") ||
-            (fight2 === "Club" && fight1 === "Trident")) {
-            console.log(fight2 + "win");
-            fight1.pop();
+            } else if ((fight2 === "Trident" && fight1 === "Spear") ||
+                (fight2 === "Spear" && fight1 === "Club") ||
+                (fight2 === "Club" && fight1 === "Trident")) {
+                console.log(fight2 + " win");
+                this.gladiators.splice(0,1);
+            }
         }
     }
-
 
 }

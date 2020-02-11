@@ -18,7 +18,7 @@ import Arena from './arena.js';
 
 // // part 2 #2
 // const megalopolis = new Arena("megalopolis");
-// console.log(megalopolis.name.charAt(0).toUpperCase() + megalopolis.name.slice(1)); // => Megalopolis
+// console.log(megalopolis.name); // => Megalopolis
 
 // // part 2 #3
 // const gladiator = new Arena("Colosseum");
@@ -42,8 +42,8 @@ import Arena from './arena.js';
 
 
 // part 2 #6
-const max = new Gladiator("Maximus", "Trident");
-const titus = new Gladiator("Titus", "Spear");
+const max = new Gladiator("Maximus", "Spear");
+const titus = new Gladiator("Titus", "Trident");
 const colosseum = new Arena("Colosseum");
 
 colosseum.addGladiator(max);
