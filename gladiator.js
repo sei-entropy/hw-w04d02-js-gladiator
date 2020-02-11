@@ -1,6 +1,11 @@
 'use strict'
 console.log('Its work !');
-
+class Gladiator{
+    constructor(name,weapon){
+        this.name=name;
+        this.weapon=weapon;
+    }
+}
 // import {getRandom , life} from '/js/helper.js';
 // console.log('random Nomber :' ,getRandom());
 // console.log('life :',life);
