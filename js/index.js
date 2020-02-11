@@ -4,7 +4,7 @@ import {Arena} from './arena.js';
 // const max = new Gladiator("Maximus", "Trident");
 // console.log(max.name); // "Maximus"
 
-//The name should be capitalized
+// The name should be capitalized
 // const colosseum = new Arena("megalopolis");
 // console.log(colosseum.name); // => Megalopolis
 
@@ -31,11 +31,11 @@ import {Arena} from './arena.js';
 
 
 // const max = new Gladiator("Maximus","Trident");
-const titus = new Gladiator("Titus","Spear");
-const colosseum = new Arena("Colosseum");
+// const titus = new Gladiator("Titus","Spear");
+// const colosseum = new Arena("Colosseum");
 
 // colosseum.addGladiator(max);
-colosseum.addGladiator(titus);
-colosseum.fight();
+// colosseum.addGladiator(titus);
+// colosseum.fight();
 
-console.log(colosseum.gladiators); // => [max]
+// console.log(colosseum.gladiators); // => [max]

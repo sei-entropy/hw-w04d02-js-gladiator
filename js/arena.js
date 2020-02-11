@@ -14,9 +14,11 @@ class Arena {
 
 
     fight() {
+        
             if (this.gladiators[0].weapon === "Trident" &&
                 this.gladiators[1].weapon === "Spear") {
                 return this.gladiators.pop();
+    
             }
             else if (this.gladiators[0].weapon === "Spear" &&
                 this.gladiators[1].weapon === "Trident"){
@@ -44,11 +46,13 @@ class Arena {
                 }
 
             else if (this.gladiators[0].weapon === this.gladiators[1].weapon){
-                        return this.gladiators.pop().shift();
+                        this.gladiators.pop();
+                        return this.gladiators.pop();
     
              }
 
 
         }
     }
+
                 export {Arena};
