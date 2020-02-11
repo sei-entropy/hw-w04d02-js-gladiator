@@ -5,7 +5,9 @@ import  Gladiator from "./gladiator.js";
 export default  class Arena {
 
 constructor(name){
-    this.name= name.toUpperCase();
+
+    this.name= name.charAt(0).toUpperCase() +name.slice(1);
+    console.log(this.name)
     this.gladiators = [];
 }
 
@@ -42,6 +44,13 @@ fight(){
 
         else if (this.gladiators[i].weapon === "Spear" ){
             if(this.gladiators[i+1].weapon === "Club"){
+                this.gladiators.pop();
+            }
+            else {
+                this.gladiators.shift();
+            }}
+             else if (this.gladiators[i].weapon === "Club" ){
+            if(this.gladiators[i+1].weapon === "Trident" ){
                 this.gladiators.pop();
             }
             else {
