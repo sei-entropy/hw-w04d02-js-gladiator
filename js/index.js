@@ -4,12 +4,11 @@ import Arena from './arena.js'
 
 
 
-// const max = new Gladiator("Maximus", "Trident");
-// console.log(max.name); // "Maximus"
-// console.log(max.weapon); // "Trident"
-
-// const colosseum = new Arena("Colosseum");
-// console.log(colosseum.name); // => Colosseum
+//const max = new Gladiator("MaxIMus", "Trident");
+//console.log(max.name); // "Maximus"
+//console.log(max.weapon); // "Trident"
+ //const colosseum = new Arena("Colosseum");
+ //console.log(colosseum.name); // => Colosseum
 
 // const colosseum = new Arena("megalopolis");
 // console.log(colosseum.name); // => Megalopolis
@@ -31,9 +30,9 @@ import Arena from './arena.js'
 // console.log(colosseum.gladiators); // => [max]
 
 
-const max = new Gladiator("Maximus","Trident");
-const titus = new Gladiator("Titus","Sword");
-const colosseum = new Arena("Colosseum");
+ const max = new Gladiator("Maximus","Spear");
+ const titus = new Gladiator("Titus","Trident");
+ const colosseum = new Arena("Colosseum");
 
 colosseum.addGladiator(max);
 colosseum.addGladiator(titus);
