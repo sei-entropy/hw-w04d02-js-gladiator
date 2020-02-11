@@ -33,12 +33,7 @@ export default class Arena {
 
                 this.gladiators.pop();
             } 
-            else if (this.gladiatorWep[1] === 'Trident' && this.gladiatorWep[0] === 'Spear' ||
-                this.gladiatorWep[1] === 'Spear' && this.gladiatorWep[0]=== 'Club' ||
-                this.gladiatorWep[1]=== 'Club' && this.gladiatorWep[0] === 'Trident') {
-
-                this.gladiators.pop();
-            }
+            
             else {
                 this.gladiators.shift();
             }
