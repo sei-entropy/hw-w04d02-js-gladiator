@@ -24,12 +24,14 @@ export default class Arena {
             if (this.gladiators[1].weapon === this.gladiators[0].weapon) {
                 this.gladiators.pop();
                 return 'The two of you are eliminated';
-            } else if (this.gladiators[0].weapon === 'Trident' && this.gladiators[1].weapon === 'Spear' ||
+            } 
+            else if (this.gladiators[0].weapon === 'Trident' && this.gladiators[1].weapon === 'Spear' ||
                 this.gladiators[0].weapon === 'Spear' && this.gladiators[1].weapon === 'Club' ||
                 this.gladiators[0].weapon === 'Club' && this.gladiators[1].weapon === 'Trident') {
 
                 this.gladiators.pop();
-            } else {
+            } 
+            else {
                 this.gladiators.shift();
             }
 
