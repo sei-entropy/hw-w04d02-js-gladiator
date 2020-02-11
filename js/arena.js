@@ -16,36 +16,37 @@ class Arena {
     fight() {
             if (this.gladiators[0].weapon === "Trident" &&
                 this.gladiators[1].weapon === "Spear") {
-                return this.gladiators[0];
+                return this.gladiators.pop();
             }
             else if (this.gladiators[0].weapon === "Spear" &&
                 this.gladiators[1].weapon === "Trident"){
-                return this.gladiators[1];
+                return this.gladiators.shift();
             }
 
             else if (this.gladiators[0].weapon === "Spear" &&
                 this.gladiators[1].weapon === "Club"){
-                return this.gladiators[0];
+                    return this.gladiators.pop();
             }
 
             else if (this.gladiators[0].weapon === "Club" &&
                 this.gladiators[1].weapon === "Spear") {
-                return this.gladiators[1];
+                    return this.gladiators.shift();
             }
 
 
            else  if (this.gladiators[0].weapon === "Club" &&
                 this.gladiators[1].weapon === "Trident") {
-                return this.gladiators[0];
+                    return this.gladiators.pop();
             }
             else if (this.gladiators[0].weapon === "Trident" &&
                 this.gladiators[1].weapon === "Club") {
-                return this.gladiators[1];
+                    return this.gladiators.shift();
                 }
 
             else if (this.gladiators[0].weapon === this.gladiators[1].weapon){
-                        return "both gladiators eliminated" 
-             };
+                        return this.gladiators.pop().shift();
+    
+             }
 
 
         }
