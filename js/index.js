@@ -26,7 +26,7 @@ colosseum.addGladiator(andronicus);
 console.log(colosseum.gladiators.length);
 
 colosseum.fight();
-colosseum.isEntertained();
+
 colosseum.removeGladiator('titus')
 
 console.log(colosseum);

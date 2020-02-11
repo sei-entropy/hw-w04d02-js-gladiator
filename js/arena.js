@@ -18,27 +18,42 @@ export default class Arena {
     fight() {
         // winning conditions: trident > spear, spear > club, club > trident
         // looping around gladiators 2 times
-        for (let i = 0; i < 2; i++)
+        for (let i = 0; i < 2; i++) {
             if (this.gladiators[0].name === 'Maximus') {
                 console.log(`${this.gladiators[0].name} wins!`);
                 return;
             }
-        // in every case the first gladiator is the winner
-        else if (this.gladiators[0].weapon === 'Trident' && this.gladiators[1].weapon === 'Spear') {
-            
-            console.log(`${this.gladiators[0].name} wins!`)
-            return;
-        } else if (this.gladiators[0].weapon === 'Spear' && this.gladiators[1].weapon === 'Club') {
-            console.log(`${this.gladiators[0].name} wins!`);
-            return;
-        } else if (this.gladiators[0].weapon === 'Club' && this.gladiators[1].weapon === 'Trident') {
-            console.log(`${this.gladiators[0].name} wins!`);
-            return;
-        } else
+            // in every case the first gladiator is the winner
+            // if the user type 2 then the second gladiator (the loser) wins
+            else if (this.gladiators[0].weapon === 'Trident' && this.gladiators[1].weapon === 'Spear') {
+                const input = prompt('Enter 1: thumps up, 2: thumps down');
+                if (input === '1')
+                    console.log(`${this.gladiators[0].name} wins!`)
+                else
+                    console.log(`${this.gladiators[1].name} wins!`)
+                return;
+            } else if (this.gladiators[0].weapon === 'Spear' && this.gladiators[1].weapon === 'Club') {
+                const input = prompt('Enter 1: thumps up, 2: thumps down');
+                if (input === '1')
+                    console.log(`${this.gladiators[0].name} wins!`);
+                else
+                    console.log(`${this.gladiators[1].name} wins!`);
+                return;
+            } else if (this.gladiators[0].weapon === 'Club' && this.gladiators[1].weapon === 'Trident') {
+                const input = prompt('Enter 1: thumps up, 2: thumps down');
+                if (input === '1')
+                    console.log(`${this.gladiators[0].name} wins!`);
+                else
+                    console.log(`${this.gladiators[1].name} wins!`);
+                return;
+
+            }
+
+
             // if none of the above is true >> reverse the array and check againg
             this.gladiators.reverse();
+        }
     }
-
     //Bonus methods
     removeGladiator(name) {
         // capitalizing
@@ -49,10 +64,10 @@ export default class Arena {
         })], 1);
     }
 
-    isEntertained(){
+    isEntertained() {
         this.gladiators.filter(gladiator => {
-            if(gladiator.name === 'Maximus')
-            this.entertained = true;
+            if (gladiator.name === 'Maximus')
+                this.entertained = true;
         });
         console.log(this.entertained);
     }
