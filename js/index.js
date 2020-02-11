@@ -19,7 +19,7 @@ import Arena from './arena.js';
 // colosseum.addGladiator(max);
 // console.log(colosseum.gladiator);
 //
-const max = new Gladiator("Maximus", "Club");
+const max = new Gladiator("Maximu", "Club");
 const titus = new Gladiator("Titus", "Spear");
 const andronicus = new Gladiator("Andronicus", "Sword");
 const colosseum = new Arena("colosseum");

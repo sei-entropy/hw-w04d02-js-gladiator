@@ -36,13 +36,13 @@ fight(){
          console.log(`${this.gladiators[0].name} win`);
          this.removeGladiators(this.gladiators[0]);
          
-         this.removeGladiators(this.gladiators[1]);
+        // this.removeGladiators(this.gladiators[1]);
 
          return;
     }
     if (this.gladiators[0].weapon === 'Spear' && this.gladiators[1].weapon === 'Trident') {
          console.log(`${this.gladiators[1].name} win`);
-     this.removeGladiators(this.gladiators[0]);
+    // this.removeGladiators(this.gladiators[0]);
          
          this.removeGladiators(this.gladiators[1]);
           return;
@@ -51,19 +51,19 @@ fight(){
         console.log(`${this.gladiators[1].name} win`);
      this.removeGladiators(this.gladiators[0]);
        
-        this.removeGladiators(this.gladiators[1]);
+       // this.removeGladiators(this.gladiators[1]);
          return;
     }
     if (this.gladiators[0].weapon === 'Spear' && this.gladiators[1].weapon === 'Club') {
         console.log(`${this.gladiators[0].name} win`);
-        this.removeGladiators(this.gladiators[0]);
+       // this.removeGladiators(this.gladiators[0]);
         
         this.removeGladiators(this.gladiators[1]);
          return;
     }
     if (this.gladiators[0].weapon === 'Club' && this.gladiators[1].weapon === 'Trident') {
         console.log(`${this.gladiators[0].name} win`);
-        this.removeGladiators(this.gladiators[0]);
+        //this.removeGladiators(this.gladiators[0]);
        
         this.removeGladiators(this.gladiators[1]);
          return;
@@ -72,9 +72,11 @@ fight(){
         console.log(`${this.gladiators[1].name} win`);
         this.removeGladiators(this.gladiators[0]);
         
-        this.removeGladiators(this.gladiators[1]);
+       // this.removeGladiators(this.gladiators[1]);
          return;
     }
 if (this.gladiators[0].weapon === this.gladiators[1].weapon){
+            this.removeGladiators(this.gladiators[0]);
+            this.removeGladiators(this.gladiators[1]);
     console.log('both eliminated');
 }}}
