@@ -1,8 +1,7 @@
-import gladiator from './gladiator.js';
 
 
 
-export default class arena extends gladiator {
+export default class Arena extends Gladiator {
 
     constructor(name) {
 
@@ -22,13 +21,13 @@ export default class arena extends gladiator {
     }
 
 
-    removeGladiator(gladiator) {
+    // removeGladiator(gladiator) {
 
-        if (this.gladiators.length < 2) {
-            this.gladiators.pop(Gladiator)
-        }
+    //     if (this.gladiators.length < 2) {
+    //         this.gladiators.splice(gladiators[]);
+    //     }
 
-    }
+    // }
 
 
     fight() {
@@ -74,22 +73,4 @@ export default class arena extends gladiator {
         }
 
     }
-
 }
-const colosseum = new Arena("Colosseum");
-console.log(colosseum.name); // => Colosseum
-
-
-const colosseum1 = new Arena("megalopolis");
-console.log(colosseum1.name); // => Megalopolis
-
-
-const colosseum2 = new Arena("Colosseum");
-console.log(colosseum2.gladiators);
-
-
-
-const max = new Gladiator("Maximus", "Trident");
-const colosseum = new Arena("Colosseum");
-colosseum.addGladiator(max);
-console.log(colosseum.gladiators); // => [Gladiator]
