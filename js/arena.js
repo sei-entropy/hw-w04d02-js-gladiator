@@ -1,12 +1,11 @@
- import Gladiator from './gladiator.js';
 
-
-export  class Arena {
+ export default class Arena {
    constructor(name ){
-        this.name=name.toUpperCase();
+        this.name=name.charAt(0).toUpperCase() + name.slice(1)
+
         this.gladiators=[];
 }
-
+ 
 addGladiator(gladiators) {
     if (this.gladiators.length <= 2)
     {

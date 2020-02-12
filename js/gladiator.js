@@ -1,7 +1,7 @@
 'use strict';
 
 
-export class Gladiator{
+export default class Gladiator{
     constructor(name,weapon){
 
         this.name=name;

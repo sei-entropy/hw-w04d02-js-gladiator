@@ -1,6 +1,6 @@
 'use strict';
 import Arena from "./arena.js";
-import Gladiator from ".gladiator.js";
+import Gladiator from "./gladiator.js";
 
 console.log('it is work');
 
