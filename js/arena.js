@@ -11,11 +11,8 @@
             this.gladiators.push(gladiator);
      };}
 
-     removeGladiator(name){
-         this.gladiators.filter(gld => {
-             return gld.name == name.name 
-         });
-     }
+ 
+     
 
      fight() {
          if (this.gladiators.length == 2) {
@@ -24,13 +21,13 @@
              if (firstFighter == secondFighter) return console.log("Both eliminated")
              else {
                  if (firstFighter == 'Spear' && secondFighter == "Club") 
-                 return console.log(this.gladiators[0].name + "is Winner!")
+                 return this.gladiators.pop() + console.log(this.gladiators[0].name + "is Winner!")
                  else if (firstFighter == 'Club' && secondFighter == "Trident") 
-                 return console.log(this.gladiators[0].name + "is Winner!")
+                 return this.gladiators.pop() + console.log(this.gladiators[0].name + "is Winner!")
                  else if (firstFighter == 'Trident' && secondFighter == "Spear") 
-                 return console.log(this.gladiators[0].name + "is Winner")
+                 return this.gladiators.pop()+ console.log(this.gladiators[0].name + "is Winner")
                  else 
-                 return console.log(this.gladiators[1].name + "is Winner!")
+                 return console.log(this.gladiators[1].name + "is Winner!") + this.gladiators.shift();
 
              }
          }
