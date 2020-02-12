@@ -15,20 +15,19 @@ export default class Arena extends Gladiator {
     fight() {
         if (this.gladiators[0].weapon === 'Tredint' && this.gladiators[1].weapon === 'Spear' ||
             this.gladiators[0].weapon === 'Spear' && this.gladiators[1].weapon === 'Club ' ||
-            this.gladiators[0].weapon === 'Club' && this.gladiators[1].weapon === 'Tredint ')
+            this.gladiators[0].weapon === 'Club' && this.gladiators[1].weapon === 'Tredint ') {
             this.gladiators.pop();
-
-        else if (this.gladiators[0].weapon === 'Spear' && this.gladiators[1].weapon === 'Tredint' ||
+        } else if (this.gladiators[0].weapon === 'Spear' && this.gladiators[1].weapon === 'Tredint' ||
             this.gladiators[0].weapon === 'Club' && this.gladiators[1].weapon === 'Spear ' ||
-            this.gladiators[0].weapon === 'Tredint' && this.gladiators[1].weapon === 'Club ')
+            this.gladiators[0].weapon === 'Tredint' && this.gladiators[1].weapon === 'Club ') {
             this.gladiators.shift();
-
-        else if (
+        } else if (
             this.gladiators[0].weapon === 'Spear' && this.gladiators[1].weapon === 'Spear' ||
             this.gladiators[0].weapon === 'Club' && this.gladiators[1].weapon === 'Club ' ||
-            this.gladiators[0].weapon === 'Tredint' && this.gladiators[1].weapon === 'Tredint ')
+            this.gladiators[0].weapon === 'Tredint' && this.gladiators[1].weapon === 'Tredint ') {
             this.gladiators.pop();
-        this.gladiators.pop();
+            this.gladiators.pop();
+        }
 
 
     }
