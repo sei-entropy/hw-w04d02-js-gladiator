@@ -38,6 +38,11 @@ export default class Arena {
             this.gladiators.splice(0,1)
             // this.gladiator.pop();
         }
+        if (weapon1 === weapon2){
+          console.log('tie')
+          this.gladiators.splice(0,1)
+          // this.gladiator.pop();
+      }
     }
     entertain(){
     if ((this.gladiators.name) === "Maximus" || (this.gladiators.name) === "Maximus") {
