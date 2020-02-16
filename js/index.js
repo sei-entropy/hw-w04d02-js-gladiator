@@ -45,12 +45,13 @@ console.log(colosseum.name); // => Megalopolis
 // //fight:
 
 
-const max = new Gladiator("Maximus","Trident");
-const titus = new Gladiator("Titus","Spear");
+//const max = new Gladiator("Maximus","Trident");
+const titus1 = new Gladiator("Titus","Spear");
+const titus2 = new Gladiator("Titus","Spear");
 // const colosseum = new Arena("Colosseum");
 
-colosseum.addGladiator(max);
-colosseum.addGladiator(titus);
+colosseum.addGladiator(titus1);
+colosseum.addGladiator(titus2);
 colosseum.fight();
 
 console.log(colosseum.gladiators); // => [max]
