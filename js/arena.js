@@ -18,7 +18,9 @@
          if (this.gladiators.length == 2) {
              let firstFighter = this.gladiators[0].weapon
              let secondFighter = this.gladiators[1].weapon
-             if (firstFighter == secondFighter) return console.log("Both eliminated")
+             if (firstFighter == secondFighter) 
+              return 
+                  this.gladiators.pop() + console.log("Both eliminated")
              else {
                  if (firstFighter == 'Spear' && secondFighter == "Club") 
                  return this.gladiators.pop() + console.log(this.gladiators[0].name + "is Winner!")
