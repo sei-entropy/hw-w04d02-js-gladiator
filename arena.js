@@ -34,8 +34,7 @@ export default class Arena extends Gladiator {
                 (this.gladiators[0].weapon === 'Spear' && this.gladiators[1].weapon === 'Spear') ||
                 (this.gladiators[0].weapon === 'Club' && this.gladiators[1].weapon === 'Club')
             ) {
-                this.gladiators[0].pop();
-                this.gladiators[1].pop();
+                this.gladiators.splice(0,2);
             } //inner if
 
         } //outer if
