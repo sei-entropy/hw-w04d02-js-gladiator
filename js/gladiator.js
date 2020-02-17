@@ -1,4 +1,4 @@
-class Gladiator {
+export default class Gladiator {
     constructor(name,weapon){
 
     this.name= name;
@@ -11,4 +11,3 @@ class Gladiator {
     }
 }
 
-export {Gladiator}; 

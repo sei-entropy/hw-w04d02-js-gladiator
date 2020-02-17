@@ -1,4 +1,4 @@
-class Arena {
+export default class Arena {
     constructor(name, gladiators = []) {
 
         this.name = name.charAt(0).toUpperCase() + name.slice(1);
@@ -55,4 +55,4 @@ class Arena {
         }
     }
 
-                export {Arena};
+           
